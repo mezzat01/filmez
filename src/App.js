@@ -1,4 +1,7 @@
 import './App.css';
+import SearchIcon from './search.svg'
+
+
 import React from 'react';
 import { useEffect } from 'react';
 // 9fd24c6b 
@@ -14,9 +17,6 @@ const searchMovies = async (title) => {
       console.log(data.Search);
 
 }
-
-
-
 // We will use useEffect to fetch api as soon as our component loads .
   useEffect(() => {
      searchMovies('Spiderman');
@@ -24,7 +24,7 @@ const searchMovies = async (title) => {
 
   return (
     <div className="App">
-     <h1>React start</h1>
+     <h1>Filmez</h1>
 
     </div>
   );
