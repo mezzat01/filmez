@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 const API_URL = 'http://www.omdbapi.com?apikey=9fd24c6b';
 
 
+
 const movie1 = {
   "Title": "Italian Spiderman",
   "Year": "2007",
