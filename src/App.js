@@ -20,6 +20,13 @@ const movie1 = {
 
 
 const App = () => {
+
+
+
+
+
+
+  
 // Creating a function that will fetch our movies .
 const searchMovies = async (title) => {
       const response = await fetch (`${API_URL}&s=${title}`);
