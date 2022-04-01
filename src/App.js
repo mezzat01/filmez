@@ -9,17 +9,8 @@ const API_URL = 'http://www.omdbapi.com?apikey=9fd24c6b';
 
 
 
-const movie1 = {
-  "Title": "Italian Spiderman",
-  "Year": "2007",
-  "imdbID": "tt2705436",
-  "Type": "movie",
-  "Poster": "https://m.media-amazon.com/images/M/MV5BYjFhN2RjZTctMzA2Ni00NzE2LWJmYjMtNDAyYTllOTkyMmY3XkEyXkFqcGdeQXVyNTA0OTU0OTQ@._V1_SX300.jpg"
-}
-
-
-
 const App = () => {
+
 
 const [movies, setMovies] = useState([]);
 
@@ -56,12 +47,27 @@ const searchMovies = async (title) => {
          onClick={() => {}}
       />
      </div>
+{
+ // Cheking if the movie exist then place it to movie card :
+ movies?.length > 0
+  ?(
+    <div className='container'>
+  {/* Mapping arround the found movies in the search and displaying them */}
+  {movies.map((movie) => (
+    <MovieCard movie={movie}/>
+  ))}
 
-   <div className='container'>
-         <MovieCard movie1={movie1}/>
-   </div>
+</div>
+ // Else
+  ) : (
+     <div className='Empty' >
+       <h2>No movies found</h2>
+     </div>
+  )
+}
+  
 
-    </div>
+  </div>
   );
 }
 
