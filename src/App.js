@@ -10,12 +10,9 @@ const API_URL = 'http://www.omdbapi.com?apikey=9fd24c6b';
 
 
 const App = () => {
-
-
 const [movies, setMovies] = useState([]);
 
-
-
+// using useEffect to make the search bar work
 
 
 // Creating a function that will fetch our movies .
