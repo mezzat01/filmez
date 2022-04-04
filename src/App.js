@@ -11,7 +11,7 @@ const API_URL = 'http://www.omdbapi.com?apikey=9fd24c6b';
 
 const App = () => {
 const [movies, setMovies] = useState([]);
-const [searchTerm,setSearchTerm] = useState([]);
+const [searchTerm,setSearchTerm] = useState('');
 // using useEffect to make the search bar work
 
 
@@ -41,7 +41,7 @@ const searchMovies = async (title) => {
       <img 
          src={SearchIcon}
          alt="search"
-         onClick={() => {}}
+         onClick={() => searchMovies(searchTerm)}
       />
      </div>
 {
