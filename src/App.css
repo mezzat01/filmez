@@ -13,3 +13,8 @@
   --font-raleway: "Raleway", sans-serif;
 }
 
+.app {
+  display: flex;
+  flex-direction: row;
+}
+
