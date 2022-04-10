@@ -15,7 +15,7 @@
 
 .App {
   display: flex;
-  
+  background: black;
 }
 
 .container {
@@ -24,5 +24,3 @@
 }
 
 
-
-app {}
