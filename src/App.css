@@ -34,3 +34,9 @@ h1 {
   width:45px;
 }
 
+
+.card {
+  padding: 0cm;
+  height: 0ch;
+  width: fit-content;
+}
