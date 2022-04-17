@@ -39,4 +39,6 @@ h1 {
   padding: 0cm;
   height: 0ch;
   width: fit-content;
+  display: grid;
+  scroll-behavior: smooth;
 }
