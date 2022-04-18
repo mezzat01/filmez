@@ -42,3 +42,9 @@ h1 {
   display: grid;
   scroll-behavior: smooth;
 }
+
+
+.header {
+  display: flex;
+  height: fit-content;
+}
